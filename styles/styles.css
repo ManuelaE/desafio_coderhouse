@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedor {
+  padding: 0 5%;
+  margin: auto;
+}
+
+h2 {
+  color: #ff5277;
+  font-size: bold;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.white {
+  color: #fff;
+}
+
+.wine {
+  padding: 10px 15px;
+  color: #94001f;
+}
+
+.wine:hover {
+  color: white;
+}
+
+.winy {
+  background-color: #94001f;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.gray {
+  font-family: "Montserrat", sans-serif;
+  color: #424242;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  /*HEADERRRRRRRRRRRRRR*/
+  /*BANNERRRRRRRRRRRRRR*/
+  /*INTROOOOOOOOOOOOOOO*/
+  /*CATEGORIESSSSSSSSSSS*/
+  /*TESTIMONIOSSSSSSSSSS*/
+  /*GIVEAWAYYYYYYYYYYY*/
+}
+
+body header {
+  background-color: #f9a395;
+  padding: 10px 0;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header nav img {
+  width: 60px;
+  height: 60px;
+}
+
+body header nav ul li {
+  margin-left: 30px;
+}
+
+body header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+body .banner {
+  background-color: #fff7f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+body .banner__textoPrincipal h1 {
+  color: #ff5277;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 20px 0;
+  font-family: "Libre Baskerville", serif;
+  margin-right: 30px;
+}
+
+body .banner__fotoPrincipal__img {
+  width: 250px;
+  height: 380px;
+}
+
+body .intro {
+  padding: 40px 0;
+}
+
+body .intro .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .intro .contenedor .intro__titulo {
+  width: 48%;
+  margin: 0 80px;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+body .intro .contenedor .intro__titulo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .intro .contenedor .intro__parrafo {
+  width: 48%;
+  padding: 20px 20px;
+}
+
+body .categories .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 319px;
+}
+
+body .categories .contenedor div article button {
+  background-color: #ff93aa;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 20px;
+  font-weight: 700;
+  color: #94001f;
+}
+
+body .categories .contenedor .categories__principal {
+  background-image: url("../images/create_categories_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  border: solid 2px #fff;
+}
+
+body .categories .contenedor .categories__principal button {
+  background-color: #ff93aa;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 40px;
+  font-weight: 700;
+  color: #94001f;
+}
+
+body .categories .contenedor .categories__secundarias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body .categories .contenedor .categories__secundarias h3 {
+  text-align: left;
+}
+
+body .categories .contenedor .categories__secundarias article {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  border: solid 2px #fff;
+}
+
+body .categories .contenedor .categories__secundarias--books {
+  background-image: url("../images/create_header_2.png");
+}
+
+body .categories .contenedor .categories__secundarias article.categories__secundarias--stickers {
+  background-image: url("../images/create_header_3.png");
+  width: 65%;
+}
+
+body .categories .contenedor .categories__secundarias article.categories__secundarias--calendars {
+  background-image: url("../images/create_header_4.png");
+  width: 65%;
+}
+
+body .categories .contenedor .categories__secundarias--others {
+  background-image: url("../images/create_header_5.png");
+}
+
+body .testi {
+  padding: 60px 0;
+}
+
+body .testi .card-title.wine {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body .testi .card {
+  width: 50%;
+}
+
+body .testi .card img {
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .testi .col-9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .testi .carousel-inner .carousel-item > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .giveaway {
+  padding: 60px 60px;
+  text-align: right;
+}
+
+body .giveaway h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+}
+
+body .giveaway p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+
+body .giveaway button {
+  background-color: #ff93aa;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 20px;
+  font-weight: 700;
+  color: #94001f;
+}
+/*# sourceMappingURL=styles.css.map */

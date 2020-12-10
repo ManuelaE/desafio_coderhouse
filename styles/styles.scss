@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  padding: 0 5%;
+  margin: auto;
+}
+
+h2 {
+  color: #ff5277;
+  font-size: bold;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.white {
+  color: #fff;
+}
+
+.wine {
+  padding: 10px 15px;
+  color: #94001f;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.winy {
+  background-color: #94001f;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.gray {
+  font-family: "Montserrat", sans-serif;
+  color: #424242;
+}
+
+//////////////////////////////////
+
+body {
+  font-family: "Libre Baskerville", serif;
+  /*HEADERRRRRRRRRRRRRR*/
+  header {
+    background-color: #f9a395;
+    padding: 10px 0;
+
+    nav {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      ul li {
+        margin-left: 30px;
+        a {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  /*BANNERRRRRRRRRRRRRR*/
+  .banner {
+    background-color: #fff7f5;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    &__textoPrincipal{
+
+      h1 {
+        color: #ff5277;
+        font-weight: bold;
+        font-size: 2.4rem;
+        margin: 20px 0;
+        font-family: "Libre Baskerville", serif;
+        margin-right: 30px;
+      }
+    }
+    
+    &__fotoPrincipal{
+      &__img {
+        width: 250px;
+        height: 380px;
+      }
+    }
+    
+  }
+
+  /*INTROOOOOOOOOOOOOOO*/
+  .intro {
+    padding: 40px 0;
+
+    .contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .intro__titulo {
+        width: 48%;
+        margin: 0 80px;
+        transition: transform 1s, opacity 1s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .intro__parrafo {
+        width: 48%;
+        padding: 20px 20px;
+      }
+    }
+  }
+
+  /*CATEGORIESSSSSSSSSSS*/
+  .categories {
+    .contenedor {
+      display: flex;
+      flex-flow: row;
+      height: 319px;
+
+      div article {
+        button {
+          background-color: #ff93aa;
+          font-family: "Montserrat", sans-serif;
+          padding: 5px 20px;
+          font-weight: 700;
+          color: #94001f;
+        }
+      }
+
+      .categories__principal {
+        background-image: url("../images/create_categories_1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        text-align: center;
+        border: solid 2px #fff;
+
+        button {
+          background-color: #ff93aa;
+          font-family: "Montserrat", sans-serif;
+          padding: 5px 40px;
+          font-weight: 700;
+          color: #94001f;
+        }
+      }
+
+      .categories__secundarias {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2;
+
+        h3 {
+          text-align: left;
+        }
+
+        article {
+          width: 35%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          padding: 20px;
+          border: solid 2px #fff;
+        }
+
+        &--books {
+          background-image: url("../images/create_header_2.png");
+        }
+
+        article.categories__secundarias--stickers {
+          background-image: url("../images/create_header_3.png");
+          width: 65%;
+        }
+
+        article.categories__secundarias--calendars {
+          background-image: url("../images/create_header_4.png");
+          width: 65%;
+        }
+
+        &--others {
+          background-image: url("../images/create_header_5.png");
+        }
+      }
+    }
+  }
+
+  /*TESTIMONIOSSSSSSSSSS*/
+  .testi {
+    padding: 60px 0;
+
+    .card-title.wine {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .card {
+      width: 50%;
+      img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+    }
+
+    .col-9 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .carousel-inner .carousel-item > div {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  /*GIVEAWAYYYYYYYYYYY*/
+  .giveaway {
+    padding: 60px 60px;
+    text-align: right;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 50px;
+    }
+
+    button {
+      background-color: #ff93aa;
+      font-family: "Montserrat", sans-serif;
+      padding: 20px 20px;
+      font-weight: 700;
+      color: #94001f;
+    }
+  }
+}

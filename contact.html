@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <img src="" alt="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="categories.html">Categories</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About me</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Me</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="shoppingCart.html">Shopping Cart</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1 class='wine'>Do you have a project in your mind?</h1>
+        <p class='gray'>I'll be glad to hear from you and make it real.</p>
+    </section>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Write your name" id="name">
+        <label for="lastName">Lastname:</label>
+        <input type="text" name="lastName" placeholder="Write your last name" id="lastName">
+        <label for="mail">Email:</label>
+        <input type="email" name="email" placeholder="Write your email" id="mail">
+
+        <select name="gender">
+            <option selected hidden>Choose your gender:</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Prefer not to say</option>
+        </select>
+
+        <input type="checkbox" name="accept" value="yes" required> Do you accept our Terms and Conditions?
+        <textarea name="comments" placeholder="Write your message here" cols="30" rows="10"></textarea>
+        <input class='submit_btn' type="submit" value="Send">
+    </form>
+</body>
+</html>
